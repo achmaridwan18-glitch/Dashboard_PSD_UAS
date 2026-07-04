@@ -2,7 +2,7 @@
 ================================================================
   DASHBOARD PRODUKSI TANAMAN PERKEBUNAN INDONESIA
   UAS Data Science — Modern & Professional Dashboard
-  Author: [Nama Anda]
+  Author: Achmad Ridwan
   Tanggal: Juli 2026
 ================================================================
 """
