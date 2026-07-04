@@ -558,6 +558,7 @@ with tab5:
             X = X.loc[:, X.var() > 0]
 
             if X.shape[1] >= 1:
+              
                 c1, c2 = st.columns(2)
 
                 with c1:
