@@ -545,17 +545,12 @@ with tab5:
         unsafe_allow_html=True,
     )
 
-      try:
+    try:
         # Siapkan data untuk ML
         ml_df = df_filtered.select_dtypes(include=[np.number]).dropna()
         if col_production in ml_df.columns and len(ml_df) > 20:
             X = ml_df.drop(columns=[col_production])
             y = ml_df[col_production]
-
-            # 🔥 FIX ERROR: Hapus kolom dengan varians 0 (nilai konstan)
-            # Ini terjadi jika user memfilter 1 komoditas (Produktivitas jadi sama semua)
-            # atau kolom Tahun yang isinya 2024 semua.
-            X = X.loc[:, X.var() > 0]
 
             if X.shape[1] >= 1:
               
